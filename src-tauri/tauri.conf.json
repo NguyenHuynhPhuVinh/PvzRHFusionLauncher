@@ -21,6 +21,20 @@
       "csp": null
     }
   },
+  "plugins": {
+    "fs": {
+      "scope": ["$APPCACHE/*", "$APPDATA/*"],
+      "global": true
+    },
+    "path": {
+      "global": true
+    },
+    "shell": {
+      "scope": [
+        { "name": "run-game", "cmd": "$APPDATA/game/PlantsVsZombiesRH.exe" }
+      ]
+    }
+  },
   "bundle": {
     "active": true,
     "targets": "all",
